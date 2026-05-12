@@ -1,85 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gazala | PHP Developer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+<meta http-equiv="Pragma" content="no-cache">
+
+<meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ol type="A">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-    <ol type="a">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-    <ol type="1">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-    <ol type="i">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
 
-    <table border="1">
-        <caption>project</caption>
-        <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>age</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>gazala</td>
-            <td>27</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>najam</td>
-            <td>28</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>shahabaz</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>nawaz</td>
-            <td>24</td>
-        </tr>
-    </table>
-    <form action="/contact" method="post">
-        <label for="name">name</label>
-        <input type="text" name="" id="name">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="male">male</label>
-        <input type="radio" name="gender" id="male" value="male">
-        <label for="choose">2</label>
-        <input type="checkbox" name="choose" id="choose">
-        <label for="choose2">2</label>
-        <input type="checkbox" name="choose" id="choose2">
-        <label for="agre">list</label>
-        <select name="agre" id="agre">   
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-        </select>
-        <iframe width="1000" height="300" src="https://quickcode.org.in/" frameborder="0"></iframe>
-        <input type="submit" name="submit" id="submit" value="submit">
-    </form>
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm" glass>
+  <div class="container">
+    <a class="navbar-brand fw-bold gradient-text" href="#">Gazala.dev</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+         <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <button class="btn btn-dark" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="intro" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6" data-aos="fade-right">
+        <h1 class="display-4 fw-bold mb-3">
+          Hi, I'm <span class="gradient-text">Gazala</span>
+        </h1>
+
+        <div class="typing mb-3">
+          <span id="typing-text"></span>
+        </div>
+
+        <p class="lead text-secondary-emphasis">
+          Returning PHP developer with practical experience in modern web application building. Mother of 2 rebuilding a strong tech career with real-world projects.
+        </p>
+
+        <div class="d-flex gap-3 flex-wrap mt-4">
+          <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
+          <!-- <a href="cv.pdf" download class="btn btn-outline-primary btn-lg"> -->
+            <!-- <i class="fa-solid fa-download"></i> Download CV -->
+          <!-- </a> -->
+        </div>
+
+        <div class="social-icons mt-4">
+          <!-- <a href="https://github.com/gazalaparveen26" target="_blank"><i class="fab fa-github"></i></a> -->
+          <!-- <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> -->
+          <!-- <a href="https://www.fiverr.com" target="_blank"><i class="fa-solid fa-briefcase"></i></a>
+          <a href="https://www.upwork.com" target="_blank"><i class="fa-solid fa-laptop-code"></i></a> -->
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center" data-aos="fade-left">
+        <div class="glass p-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png" class="hero-img mb-4" alt="Developer">
+          <h3>PHP Web Developer</h3>
+          <p>Responsive Websites • Admin Panels • CRUD Apps</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="glass p-5" data-aos="zoom-in">
+      <p class="fs-5">
+        I previously worked as a web developer and later took a career break for family responsibilities. Now I am actively rebuilding my portfolio and working on modern PHP projects using PHP, MySQL, Bootstrap, and JavaScript.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Skills</h2>
+    </div>
+
+    <div class="glass p-5 text-center" data-aos="fade-up">
+      <span class="skill-badge">PHP</span>
+      <span class="skill-badge">MySQL</span>
+      <span class="skill-badge">Bootstrap</span>
+      <span class="skill-badge">JavaScript</span>
+      <span class="skill-badge">GitHub</span>
+      <span class="skill-badge">Laravel (Learning)</span>
+      <span class="skill-badge">Ubuntu</span>
+      <span class="skill-badge">Responsive Design</span>
+    </div>
+  </div>
+</section>
+<!-- ========================= -->
+<!-- DEVELOPMENT PROCESS -->
+<!-- ========================= -->
+
+<section class="py-5" id="process">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Development Process</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="glass p-4 text-center h-100">
+          <div class="display-5 fw-bold text-primary">01</div>
+          <h4 class="mt-3">Planning</h4>
+          <p>Understanding project requirements.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="glass p-4 text-center h-100">
+          <div class="display-5 fw-bold text-primary">02</div>
+          <h4 class="mt-3">Design</h4>
+          <p>Creating responsive modern UI.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="glass p-4 text-center h-100">
+          <div class="display-5 fw-bold text-primary">03</div>
+          <h4 class="mt-3">Development</h4>
+          <p>Writing clean frontend and backend code.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="glass p-4 text-center h-100">
+          <div class="display-5 fw-bold text-primary">04</div>
+          <h4 class="mt-3">Delivery</h4>
+          <p>Testing and project deployment.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Projects</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="glass p-3 project-card h-100">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop" class="img-fluid w-100 mb-3">
+          <h4>Advanced Notes App</h4>
+          <p>Notes app with authentication, mood tracker, image upload, and dashboard.</p>
+          <!-- <a href="#" class="btn btn-primary btn-sm">GitHub</a> -->
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-3 project-card h-100">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" class="img-fluid w-100 mb-3">
+          <h4>Cooking Blog Website</h4>
+          <p>Recipe blog with admin panel, image upload, and dynamic content management.</p>
+          <!-- <a href="#" class="btn btn-primary btn-sm">GitHub</a> -->
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass p-3 project-card h-100">
+          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1200&auto=format&fit=crop" class="img-fluid w-100 mb-3">
+          <h4>To-Do Application</h4>
+          <p>Task management app with CRUD operations and responsive interface.</p>
+          <!-- <a href="#" class="btn btn-primary btn-sm">GitHub</a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ========================= -->
+<!-- WHY HIRE ME SECTION -->
+<!-- ========================= -->
+
+<section class="py-5" id="why-hire-me">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">Why Hire Me</h2>
+      <p class="text-secondary">What makes me a strong freelance developer</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass p-4 text-center h-100">
+          <i class="fa-solid fa-code fs-1 text-primary mb-3"></i>
+          <h4>Clean Code</h4>
+          <p>Structured, readable and scalable code.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass p-4 text-center h-100">
+          <i class="fa-solid fa-mobile-screen-button fs-1 text-primary mb-3"></i>
+          <h4>Responsive Design</h4>
+          <p>Mobile-friendly and modern layouts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass p-4 text-center h-100">
+          <i class="fa-solid fa-bolt fs-1 text-primary mb-3"></i>
+          <h4>Fast Delivery</h4>
+          <p>Optimized and fast-loading websites.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass p-4 text-center h-100">
+          <i class="fa-solid fa-comments fs-1 text-primary mb-3"></i>
+          <h4>Easy Communication</h4>
+          <p>Clear updates and client-friendly workflow.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="glass p-5 h-100">
+          <h3>My Journey</h3>
+        <div class="mb-5">
+          <h5>Started Web Development</h5>
+          <small class="text-primary">2018</small>
+          <p>Worked as a web developer using PHP and MySQL.</p>
+        </div>
+           <div class="mb-5">
+          <h5>Career Break</h5>
+          <small class="text-primary">Family Responsibilities</small>
+          <p>Took time for family and motherhood responsibilities.</p>
+        </div>
+
+        <div class="mb-5">
+          <h5>Returning To Tech</h5>
+          <small class="text-primary">2026 - Present</small>
+          <p>Building modern projects and upgrading full-stack skills.</p>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-6" id="contact" data-aos="fade-left">
+        <div class="glass p-5 h-100">
+          <h3>Contact Me</h3>
+
+    <form id="contactForm" method="POST" class="mt-4">
+
+        <div class="row">
+
+          <div class="mb-3">
+            <input 
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Your Name"
+            >
+            <small class="text-danger" id="nameError"></small>
+          </div>
+          
+          <div class="mb-3">
+            <input 
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Your Email"
+            >
+            <small class="text-danger" id="emailError"></small>
+          </div>
+
+        </div>
+
+        <div class="mb-3">
+          <textarea 
+            id="message"
+            class="form-control"
+            rows="6"
+            placeholder="Your Message"
+          ></textarea>
+
+          <small class="text-danger" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" id="submitBtn">
+
+          <span id="btnText">
+            Send Message
+          </span>
+
+          <span 
+            class="spinner-border spinner-border-sm d-none"
+            id="loader"
+          ></span>
+
+        </button>
+
+      </form>
+
+      <div 
+        class="alert alert-success mt-4 d-none"
+        id="successMessage"
+      >
+        Message Sent Successfully!
+      </div>
+
+    </div>
+
+  </div>
+
+    </div>
+  </div>
+</section>
+<!-- ========================= -->
+<!-- LIVE VISITOR COUNTER -->
+<!-- ========================= -->
+<!-- 
+<section class="py-5">
+  <div class="container">
+
+    <div class="glass p-5 text-center">
+
+      <h2 class="section-title mb-4">Portfolio Statistics</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <h1 id="visitor-count" class="display-4 fw-bold text-primary">0</h1>
+          <p>Total Visitors</p>
+        </div>
+
+        <div class="col-md-4">
+          <h1 class="display-4 fw-bold text-primary">10+</h1>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="col-md-4">
+          <h1 class="display-4 fw-bold text-primary">100%</h1>
+          <p>Responsive Design</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section> -->
+<footer>
+  <div class="container">
+    <p>© 2026 Gazala | PHP Developer Portfolio</p>
+  </div>
+</footer>
+
+<!-- <a href="https://wa.me/919999999999" class="floating-whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="script.js"></script>
+
+<script src="emails.js"></script>
+
+</body>
+</script>
 </body>
 </html>
