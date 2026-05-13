@@ -76,7 +76,17 @@ form.addEventListener("submit", function(e){
     if(!valid){
         return;
     }
+/* CAPTCHA CHECK */
 
+const captchaResponse = grecaptcha.getResponse();
+
+if(captchaResponse.length === 0){
+
+    alert("Please verify captcha");
+
+    return;
+
+}
     /* SHOW LOADER */
 
     loader.classList.remove("d-none");
